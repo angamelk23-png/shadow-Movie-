@@ -1,0 +1,7 @@
+python-telegram-bot==20.8
+motor
+requests
+python-dotenv
+rapidfuzz
+apscheduler
+redis
