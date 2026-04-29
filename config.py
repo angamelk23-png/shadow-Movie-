@@ -1,12 +1,15 @@
-BOT_TOKEN = "8746836615:AAGohlbiEskI_mIO5F1JGndhYf0CvN_BPRY"
-TMDB_KEY = "af43e0289f758ede6ae31d20cc541776"
-MONGO_URI = "mongodb+srv://chamadithbuvindu_db_user:6kQaqQ0XSFPax9SO@cluster0.ywevrcf.mongodb.net/?appName=Cluster0"
+import os
+from dotenv import load_dotenv
+load_dotenv()
 
-BOT_USERNAME = "@Alexia_x1bot"
-OWNER_ID = 8458894963
-REDIS_URL = None  # if not using redis
-UPDATE_CHANNEL = "@SHADOW_Movie23"
+BOT_TOKEN=os.getenv('BOT_TOKEN')
+TMDB_KEY=os.getenv('TMDB_KEY')
+MONGO_URI=os.getenv('MONGO_URI')
+BOT_USERNAME=os.getenv('BOT_USERNAME')
+OWNER_ID=int(os.getenv('OWNER_ID'))
+REDIS_URL=os.getenv('REDIS_URL')
+UPDATE_CHANNEL=os.getenv('UPDATE_CHANNEL')
 
-SOURCE_CHANNELS = [
-    -1003994779583
+SOURCE_CHANNELS=[
+-1003994779583
 ]
